@@ -23,7 +23,7 @@ Container Hostname: 54e0e7d0d2cf , UUID: cb272d54-4542-41ed-a5af-c2424f715d7a
 ## Running with Docker Swarm:
 
 ```
-$ docker network create appnet
+$ docker network create appnet -d overlay
 $ docker service create \
 --name web \
 --publish 80:5000
